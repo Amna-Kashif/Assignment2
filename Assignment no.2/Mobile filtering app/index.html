@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Filtering App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <h1>Mobile Filtering App</h1>
+
+    <label for="mainDropdown">Select Category:</label>
+    <select id="mainDropdown" onchange="populateSecondDropdown()">      
+        <option value="">Select Category</option>
+    </select>
+
+    <br><br>
+
+    <label for="secondDropdown">Select Option:</label>
+    <select id="secondDropdown" >
+        <option value="">Select Models</option>
+    </select>
+
+    <button onclick="searchFeatures()">Show Features</button>
+
+    <div id="features"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
